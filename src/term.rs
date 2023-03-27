@@ -222,7 +222,7 @@ pub fn lift_by(term: &Term, amount: usize) -> Term {
 }
 
 #[cfg(test)]
-mod test {
+mod tests {
 	use super::*;
 
 	// once we have proper parsing, these tests can become a lot nicer-looking
