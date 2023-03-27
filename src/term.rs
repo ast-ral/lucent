@@ -267,7 +267,7 @@ mod test {
 		assert_eq!(should_be_kind_0, kind(0));
 
 		let (should_be_id, should_be_unit) = evaluate(
-			&apply(&apply(&id, &unit), &id)
+			&apply(&apply(&id, &unit), &id),
 		).unwrap();
 
 		assert_eq!(should_be_id, id);
@@ -291,7 +291,7 @@ mod test {
 						&variable(1),
 						&body,
 					),
-				)
+				),
 			)
 		}
 
@@ -342,8 +342,8 @@ mod test {
 							),
 						),
 					),
-				)
-			)
+				),
+			),
 		);
 
 		let (should_be_succ, should_be_int_to_int) = evaluate(&succ).unwrap();
